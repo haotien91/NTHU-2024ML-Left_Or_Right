@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>待轉區位置圖</title>
+    <meta charset="utf-8" />
+    <style>
+        #map { height: 700px; }
+        .legend {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .marker-cluster-custom {
+            background-color: rgba(66, 135, 245, 0.6);
+        }
+        .marker-cluster-custom div {
+            background-color: rgba(66, 135, 245, 0.8);
+            color: white;
+        }
+        
+        /* 幻燈片樣式 */
+        .carousel {
+            position: relative;
+            width: 100%;
+        }
+        .carousel-container {
+            position: relative;
+        }
+        .carousel-slide {
+            width: 100%;
+        }
+        .carousel-prev, .carousel-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .carousel-prev:hover, .carousel-next:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .carousel-prev {
+            left: 5px;
+        }
+        .carousel-next {
+            right: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>待轉區檢測結果比較</title>
+    <meta charset="utf-8" />
+    <style>
+        #map { height: 700px; }
+        .legend {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .marker-cluster-custom-answer {
+            background-color: rgba(0, 255, 0, 0.6);
+        }
+        .marker-cluster-custom-answer div {
+            background-color: rgba(0, 200, 0, 0.6);
+        }
+        .marker-cluster-custom-detected {
+            background-color: rgba(255, 0, 0, 0.6);
+        }
+        .marker-cluster-custom-detected div {
+            background-color: rgba(200, 0, 0, 0.6);
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
